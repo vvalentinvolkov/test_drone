@@ -16,3 +16,9 @@ steps:
   - mkdir hello
   - cd mkdir
   - touch world.txt
+
+trigger:
+  branch:
+  - master
+  event:
+  - push
