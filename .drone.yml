@@ -6,6 +6,9 @@ name: default
 server:
   host: 10.0.1.142
   user: dev
+  
+clone:
+  disable: true
 
 steps:
 - name: test
