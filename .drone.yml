@@ -7,7 +7,7 @@ server:
   host: 10.0.1.142
   user: dev
   ssh_key:
-    from_secret: stage_rsa_key
+    from_secret: DEPLOY_KEY
   
 clone:
   disable: true
