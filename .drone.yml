@@ -1,0 +1,15 @@
+---
+kind: pipeline
+type: ssh
+name: default
+
+server:
+  host: 10.0.1.142
+  user: dev
+
+steps:
+- name: test
+  commands:
+  - mkdir hello
+  - cd mkdir
+  - touch world.txt
