@@ -18,7 +18,7 @@ steps:
     - mkdir hello
     - cd hello
     - mkdir world
-        
-  trigger:
-    branch:
-    - main
+
+trigger:
+  branch:
+  - main
