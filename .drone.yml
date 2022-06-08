@@ -4,21 +4,21 @@ type: docker
 name: stage
 
 steps:
-  - name: ssh
-    image: appleboy/drone-ssh
-    settings:
-      host:
-        - 10.0.1.142
-      username: dev
-      key:
-        from_secret: DEPLOY_KEY
-      port: 22
-      command_timeout: 2m
-      script:
-        - mkdir hello
-        - cd hello
-        - mkdir world
+- name: ssh
+  image: appleboy/drone-ssh
+  settings:
+    host:
+    - 10.0.1.142
+    username: dev
+    key:
+      from_secret: DEPLOY_KEY
+    port: 22
+    command_timeout: 2m
+    script:
+    - mkdir hello
+    - cd hello
+    - mkdir world
         
   trigger:
     branch:
-      - main
+    - main
