@@ -4,7 +4,7 @@ type: docker
 name: stage
 
 steps:
-- name: ssh
+- name: pull
   image: appleboy/drone-ssh
   settings:
     host:
