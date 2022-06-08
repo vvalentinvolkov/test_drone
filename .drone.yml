@@ -3,6 +3,9 @@ kind: pipeline
 type: docker
 name: stage
 
+clone:
+  disable: true
+
 steps:
 - name: ssh
   image: appleboy/drone-ssh
