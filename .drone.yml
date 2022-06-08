@@ -19,8 +19,6 @@ steps:
     command_timeout: 2m
     script:
     - mkdir hello2
-    - cd hello
-    - mkdir world
 
 trigger:
   branch:
