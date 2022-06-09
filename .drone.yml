@@ -7,7 +7,7 @@ clone:
   disable: true
 
 steps:
-- name: git-pull
+- name: git-test
   image: appleboy/drone-ssh
   settings:
     host:
