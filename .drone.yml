@@ -11,7 +11,7 @@ steps:
   image: appleboy/drone-ssh
   settings:
     host:
-    - from_secret: PRIVATE_IP_STAGE
+      from_secret: PRIVATE_IP_STAGE
     username: dev
     key:
       from_secret: DEPLOY_KEY
