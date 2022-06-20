@@ -19,6 +19,7 @@ steps:
     command_timeout: 2m
     script:
     - mkdir hello
+    - pkill -f pdf_process -15
 
 trigger:
   branch:
