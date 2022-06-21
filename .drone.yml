@@ -19,7 +19,7 @@ steps:
     command_timeout: 2m
     script:
     - touch test
-    - echo ${DRONE_BRANCH{ >> test
+    - echo ${DRONE_BRANCH} >> test
     - echo ${DRONE_SOURCE_BRANCH} >> test
     - echo ${DRONE_TARGET_BRANCH} >> test
 
